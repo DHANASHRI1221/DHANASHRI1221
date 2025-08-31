@@ -546,68 +546,83 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dhanashri - Software Developer</title>
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:'Segoe UI', sans-serif; line-height:1.6; color:#333; background:linear-gradient(135deg,#667eea,#764ba2); min-height:100vh; scroll-behavior:smooth;}
-header { background:rgba(255,255,255,0.95); backdrop-filter:blur(10px); padding:1rem 0; position:fixed; width:100%; top:0; z-index:1000; box-shadow:0 2px 20px rgba(0,0,0,0.1); transition: background 0.3s ease; }
-nav { display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:0 auto; padding:0 20px; }
-.logo { font-size:1.5rem; font-weight:bold; color:#764ba2;}
-.nav-links { display:flex; list-style:none; gap:2rem; }
-.nav-links a { text-decoration:none; color:#333; font-weight:500; transition:color 0.3s;}
-.nav-links a:hover { color:#764ba2; }
+/* Reset & basic */
+* {margin:0; padding:0; box-sizing:border-box;}
+body {font-family:'Segoe UI',sans-serif; min-height:100vh; background:#0f0c29; background: linear-gradient(135deg,#667eea,#764ba2); color:#fff; scroll-behavior:smooth;}
+a {text-decoration:none;}
 
-.hero { text-align:center; padding:5rem 1rem 3rem; color:white; animation:fadeInUp 1s ease forwards; }
-.hero img { width:150px; height:150px; border-radius:50%; border:4px solid rgba(255,255,255,0.3); object-fit:cover; box-shadow:0 10px 30px rgba(0,0,0,0.3); transition:transform 0.3s; }
-.hero img:hover { transform:scale(1.05); }
-.hero h1 { font-size:3rem; margin:1rem 0; }
-.hero p { font-size:1.2rem; opacity:0.9; margin-bottom:2rem;}
-.cta-button { display:inline-block; padding:12px 30px; background:rgba(255,255,255,0.2); color:white; text-decoration:none; border-radius:50px; border:2px solid rgba(255,255,255,0.3); transition:all 0.3s; }
-.cta-button:hover { background:rgba(255,255,255,0.3); transform:translateY(-2px); }
+/* Header */
+header {position:fixed; top:0; width:100%; z-index:1000; background:rgba(0,0,0,0.5); backdrop-filter:blur(10px); padding:1rem 0; transition:0.3s;}
+nav {display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:0 auto; padding:0 20px;}
+.logo {font-size:1.5rem; font-weight:bold; color:#fff;}
+.nav-links {display:flex; gap:2rem;}
+.nav-links a {color:#fff; font-weight:500; transition:0.3s;}
+.nav-links a:hover {color:#ffcc00;}
 
-section { padding:4rem 1rem; max-width:1200px; margin:0 auto; }
-.section-title { text-align:center; font-size:2.5rem; margin-bottom:3rem; color:white; }
+/* Hero */
+.hero {text-align:center; padding:8rem 1rem 5rem;}
+.hero img {width:160px; height:160px; border-radius:50%; border:4px solid #ffcc00; object-fit:cover; box-shadow:0 15px 35px rgba(0,0,0,0.5); transition:0.3s;}
+.hero img:hover {transform:scale(1.1) rotate(5deg);}
+.hero h1 {font-size:3rem; margin:1rem 0; text-shadow:0 2px 5px rgba(0,0,0,0.5);}
+.hero p {font-size:1.2rem; margin-bottom:2rem; opacity:0.9;}
+.cta-button {display:inline-block; padding:12px 30px; background:#ffcc00; color:#000; font-weight:bold; border-radius:50px; transition:0.3s; box-shadow:0 5px 20px rgba(0,0,0,0.3);}
+.cta-button:hover {transform:translateY(-5px) scale(1.05); background:#ffaa00;}
 
-.project-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:2rem; }
-.project-card { background:#f8f9fa; border-radius:15px; padding:2rem; transition:transform 0.3s, box-shadow 0.3s; border:1px solid #e9ecef; opacity:0; transform:translateY(30px);}
-.project-card:hover { transform:translateY(-10px); box-shadow:0 20px 40px rgba(0,0,0,0.2);}
-.project-icon { width:60px; height:60px; background:linear-gradient(135deg,#667eea,#764ba2); border-radius:15px; display:flex; align-items:center; justify-content:center; font-size:2rem; margin-bottom:1rem;}
-.project-card h3 { font-size:1.5rem; margin-bottom:1rem; }
-.project-card p { color:#666; margin-bottom:1rem;}
-.tech-stack { display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1rem;}
-.tech-tag { background:rgba(118,75,162,0.15); color:#764ba2; padding:0.3rem 0.8rem; border-radius:20px; font-weight:500; }
-.project-links { display:flex; gap:1rem; }
-.project-link { padding:0.5rem 1rem; text-decoration:none; border-radius:8px; font-weight:500; transition:all 0.3s;}
-.github-link { background:#333; color:white; }
-.github-link:hover { background:#555; }
-.demo-link { background:#007bff; color:white; }
-.demo-link:hover { background:#0056b3; }
+/* About */
+.about {background:rgba(255,255,255,0.05); text-align:center; padding:3rem 1rem; border-radius:20px; margin:2rem 0; box-shadow:0 10px 30px rgba(0,0,0,0.3);}
+.about h2 {font-size:2rem; margin-bottom:1rem; color:#ffcc00; text-shadow:0 2px 5px rgba(0,0,0,0.5);}
+.about p {font-size:1.1rem; line-height:1.6; opacity:0.9;}
 
-.skills { background:linear-gradient(135deg,#667eea,#764ba2); color:white; border-radius:20px;}
-.skills-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; }
-.skill-category { background:rgba(255,255,255,0.1); padding:2rem; border-radius:15px; backdrop-filter:blur(10px);}
-.skill-category h3 { margin-bottom:1rem; font-size:1.3rem; }
-.skill-list li { padding:0.3rem 0; opacity:0.9; }
+/* Projects */
+section {padding:4rem 1rem; max-width:1200px; margin:0 auto;}
+.section-title {text-align:center; font-size:2.5rem; margin-bottom:3rem; color:#ffcc00; text-shadow:0 2px 5px rgba(0,0,0,0.5);}
+.project-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:2rem;}
+.project-card {background:rgba(255,255,255,0.05); border-radius:20px; padding:2rem; border:1px solid rgba(255,255,255,0.2); box-shadow:0 10px 30px rgba(0,0,0,0.5); transition:0.3s; opacity:0; transform:translateY(30px);}
+.project-card:hover {transform:translateY(-10px) scale(1.03); box-shadow:0 15px 40px rgba(255,204,0,0.5);}
+.project-icon {width:60px; height:60px; background:linear-gradient(135deg,#ffcc00,#ffaa00); border-radius:15px; display:flex; align-items:center; justify-content:center; font-size:2rem; margin-bottom:1rem; color:#000;}
+.project-card h3 {font-size:1.5rem; margin-bottom:1rem;}
+.project-card p {color:#ddd; margin-bottom:1rem;}
+.tech-stack {display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1rem;}
+.tech-tag {background:rgba(255,204,0,0.15); color:#ffcc00; padding:0.3rem 0.8rem; border-radius:20px; font-weight:500;}
+.project-links {display:flex; gap:1rem; flex-wrap:wrap;}
+.project-link {padding:0.5rem 1rem; border-radius:8px; font-weight:500; transition:0.3s;}
+.github-link {background:#000; color:#ffcc00;}
+.github-link:hover {background:#222;}
+.demo-link {background:#ffcc00; color:#000;}
+.demo-link:hover {background:#ffaa00;}
 
-.about { background:rgba(255,255,255,0.1); color:white; text-align:center; padding:3rem 1rem; border-radius:20px; margin-bottom:2rem; }
+/* Skills */
+.skills {background:rgba(255,255,255,0.05); padding:4rem 1rem; border-radius:20px; margin:2rem 0; box-shadow:0 10px 30px rgba(0,0,0,0.3);}
+.skills-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem;}
+.skill-category {background:rgba(255,255,255,0.1); padding:2rem; border-radius:15px; backdrop-filter:blur(10px); transition:0.3s;}
+.skill-category:hover {transform:scale(1.05); box-shadow:0 10px 25px rgba(255,204,0,0.5);}
+.skill-category h3 {margin-bottom:1rem; color:#ffcc00;}
 
-footer { background:rgba(255,255,255,0.95); padding:2rem 1rem; text-align:center; margin-top:2rem; }
-.contact-links { display:flex; justify-content:center; gap:2rem; margin-bottom:1rem; }
-.contact-links a { color:#333; text-decoration:none; font-weight:500; transition:color 0.3s;}
-.contact-links a:hover { color:#764ba2; }
+/* Contact */
+.contact {padding:4rem 1rem; background:rgba(255,255,255,0.05); border-radius:20px; text-align:center; box-shadow:0 10px 30px rgba(0,0,0,0.3);}
+.contact h2 {font-size:2.5rem; margin-bottom:1rem; color:#ffcc00; text-shadow:0 2px 5px rgba(0,0,0,0.5);}
+.contact p {font-size:1.2rem; opacity:0.9; margin-bottom:2rem;}
+.contact form {max-width:600px; margin:0 auto; display:flex; flex-direction:column; gap:1rem;}
+.contact input, .contact textarea {padding:0.8rem; border-radius:10px; border:none; outline:none; background:rgba(255,255,255,0.1); color:#fff;}
+.contact button {padding:0.8rem; border-radius:50px; border:none; background:#ffcc00; color:#000; font-weight:bold; cursor:pointer; transition:0.3s; box-shadow:0 5px 20px rgba(255,204,0,0.5);}
+.contact button:hover {transform:scale(1.05); background:#ffaa00;}
+.contact-links {display:flex; justify-content:center; gap:2rem; flex-wrap:wrap; margin-top:2rem;}
+.contact-links a {color:#ffcc00; font-weight:bold; transition:0.3s;}
+.contact-links a:hover {color:#fff;}
 
-@keyframes fadeInUp { from{opacity:0; transform:translateY(30px);} to{opacity:1; transform:translateY(0);} }
+/* Footer */
+footer {background:rgba(0,0,0,0.6); padding:2rem 1rem; text-align:center; font-weight:500; border-top:2px solid #ffcc00; margin-top:2rem;}
 
-@media(max-width:768px){
-    .hero h1 { font-size:2rem;}
-    .project-grid { grid-template-columns:1fr;}
-    .contact-links { flex-direction:column; gap:1rem;}
-}
+/* Animations */
+@keyframes fadeInUp {from{opacity:0; transform:translateY(30px);} to{opacity:1; transform:translateY(0);}}
+@media(max-width:768px){.hero h1 {font-size:2rem;}.project-grid{grid-template-columns:1fr;}.contact-links{flex-direction:column; gap:1rem;}}
 </style>
 </head>
 <body>
 
 <header>
 <nav>
-<div class="logo">Dhanashri Shivdas</div>
+<div class="logo">Dhanashri</div>
 <ul class="nav-links">
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
@@ -627,75 +642,139 @@ footer { background:rgba(255,255,255,0.95); padding:2rem 1rem; text-align:center
 
 <section id="about" class="about">
 <h2>About Me</h2>
-<p>Hi! I'm Dhanashri, a passionate software developer focused on building robust algorithms, mobile apps, and system-level solutions. I enjoy exploring new technologies and creating projects that solve real-world problems.</p>
+<p>Hi! I'm Dhanashri, passionate about creating robust algorithms, mobile apps, and system-level solutions. I love exploring new technologies and building projects that solve real-world problems.</p>
 </section>
 
 <section id="projects">
 <h2 class="section-title">Featured Projects</h2>
 <div class="project-grid">
+
+<!-- Project 1 -->
 <div class="project-card">
 <div class="project-icon">🎵</div>
-<h3>Shazam Algorithm</h3>
-<p>Audio fingerprinting system identifying songs from clips using signal processing and ML.</p>
-<div class="tech-stack"><span class="tech-tag">Python</span><span class="tech-tag">NumPy</span></div>
+<h3>Shazam Algorithm Implementation</h3>
+<p>Audio fingerprinting system that identifies songs from short audio clips using advanced signal processing and ML.</p>
+<div class="tech-stack">
+<span class="tech-tag">Python</span>
+<span class="tech-tag">NumPy</span>
+<span class="tech-tag">Signal Processing</span>
+<span class="tech-tag">Audio Analysis</span>
+</div>
 <div class="project-links">
 <a href="https://github.com/DHANASHRI1221/Shazam-App-Algorithm" class="project-link github-link" target="_blank">GitHub</a>
 </div>
 </div>
 
+<!-- Project 2 -->
+<div class="project-card">
+<div class="project-icon">📐</div>
+<h3>Interactive Math Webpage</h3>
+<p>Responsive web application for mathematical content and interactive learning, demonstrating clean CSS design and UI development.</p>
+<div class="tech-stack">
+<span class="tech-tag">HTML5</span>
+<span class="tech-tag">CSS3</span>
+<span class="tech-tag">JavaScript</span>
+<span class="tech-tag">Responsive Design</span>
+</div>
+<div class="project-links">
+<a href="https://github.com/DHANASHRI1221/MathWebpage" class="project-link github-link" target="_blank">GitHub</a>
+</div>
+</div>
+
+<!-- Project 3 -->
+<div class="project-card">
+<div class="project-icon">❓</div>
+<h3>Q&A Tool with API Integration</h3>
+<p>Intelligent question-answering system integrating external APIs to provide accurate, real-time responses.</p>
+<div class="tech-stack">
+<span class="tech-tag">API Integration</span>
+<span class="tech-tag">NLP</span>
+<span class="tech-tag">REST APIs</span>
+<span class="tech-tag">Data Processing</span>
+</div>
+<div class="project-links">
+<a href="https://github.com/DHANASHRI1221/Question-and-Answer-Tool-with-API-Integration" class="project-link github-link" target="_blank">GitHub</a>
+</div>
+</div>
+
+<!-- Project 4 -->
 <div class="project-card">
 <div class="project-icon">🚁</div>
-<h3>Drone Detection Simulation</h3>
-<p>Simulation system for micro-Doppler signature analysis and UAV tracking.</p>
-<div class="tech-stack"><span class="tech-tag">Robotics</span><span class="tech-tag">Signal Processing</span></div>
+<h3>Robotics Simulation - Drone Detection</h3>
+<p>Simulation system for micro-Doppler signature analysis and drone detection using signal processing techniques.</p>
+<div class="tech-stack">
+<span class="tech-tag">Robotics</span>
+<span class="tech-tag">Signal Processing</span>
+<span class="tech-tag">Simulation</span>
+<span class="tech-tag">Doppler Analysis</span>
+</div>
 <div class="project-links">
 <a href="https://github.com/DHANASHRI1221/Interactive_RoboticsSimulation-of-Micro-Doppler-Signatures-Drone-Detection" class="project-link github-link" target="_blank">GitHub</a>
 </div>
 </div>
 
+<!-- Project 5 -->
 <div class="project-card">
 <div class="project-icon">🔋</div>
 <h3>Android Power Profiler</h3>
-<p>Real-time app monitoring battery, CPU usage, and wakelocks to optimize power efficiency.</p>
-<div class="tech-stack"><span class="tech-tag">Android</span><span class="tech-tag">Kotlin</span></div>
+<p>Real-time Android app for monitoring battery consumption, CPU usage, and wakelocks for efficiency optimization.</p>
+<div class="tech-stack">
+<span class="tech-tag">Android</span>
+<span class="tech-tag">Kotlin</span>
+<span class="tech-tag">System APIs</span>
+<span class="tech-tag">Data Visualization</span>
+</div>
 <div class="project-links">
-<a href="#" class="project-link demo-link">Coming Soon</a>
+<a href="#" class="project-link demo-link coming-soon">Coming Soon</a>
 </div>
 </div>
+
 </div>
 </section>
 
 <section id="skills" class="skills">
 <h2 class="section-title">Technical Skills</h2>
 <div class="skills-grid">
-<div class="skill-category"><h3>Languages</h3><ul class="skill-list"><li>Python</li><li>C/C++</li><li>Java/Kotlin</li><li>JavaScript</li></ul></div>
-<div class="skill-category"><h3>Frameworks & Tools</h3><ul class="skill-list"><li>Android SDK & NDK</li><li>NumPy & SciPy</li><li>HTML5/CSS3/JS</li><li>Git & GitHub</li></ul></div>
-<div class="skill-category"><h3>Specializations</h3><ul class="skill-list"><li>Audio Fingerprinting</li><li>Drone Detection</li><li>API Integration</li><li>Mobile & System Programming</li></ul></div>
+<div class="skill-category">
+<h3>Programming Languages</h3>
+<ul>
+<li>Python (Audio Processing, ML)</li>
+<li>C/C++ (Algorithms, System Programming)</li>
+<li>Java/Kotlin (Android Development)</li>
+<li>JavaScript (Web Development)</li>
+</ul>
+</div>
+<div class="skill-category">
+<h3>Technologies & Frameworks</h3>
+<ul>
+<li>Android SDK & NDK</li>
+<li>Signal Processing (NumPy, SciPy)</li>
+<li>Web Technologies (HTML5, CSS3)</li>
+<li>Version Control (Git, GitHub)</li>
+</ul>
+</div>
+<div class="skill-category">
+<h3>Specializations</h3>
+<ul>
+<li>Audio Fingerprinting Algorithms</li>
+<li>Drone Detection & Tracking Systems</li>
+<li>API Integration & Data Processing</li>
+<li>Mobile App Development</li>
+<li>System-level Programming</li>
+<li>Data Structures & Algorithms</li>
+</ul>
+</div>
 </div>
 </section>
 
-<footer id="contact">
+<section id="contact" class="contact">
+<h2>Contact Me</h2>
+<p>Have a project in mind or just want to say hi? Reach out!</p>
+<form>
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
 <div class="contact-links">
-<a href="https://github.com/DHANASHRI1221" target="_blank">GitHub</a>
-<a href="mailto:dhanashrirs108@gmail.com">Email</a>
-<a href="https://www.linkedin.com/in/dhanashri-shivdas-a9663a24a/" target="_blank">LinkedIn</a>
-</div>
-<p>&copy; 2025 Dhanashri. Building ideas, one line at a time!</p>
-</footer>
-
-<script>
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
-anchor.addEventListener('click',function(e){ e.preventDefault();
-document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth',block:'start'});});
-});
-
-// Scroll animation for projects
-const observer = new IntersectionObserver(entries=>{
-entries.forEach(entry=>{ if(entry.isIntersecting){ entry.target.style.opacity=1; entry.target.style.transform='translateY(0)'; }});
-},{threshold:0.1});
-document.querySelectorAll('.project-card').forEach(card=>observer.observe(card));
-</script>
-
-</body>
-</html>
+<a href="mailto
