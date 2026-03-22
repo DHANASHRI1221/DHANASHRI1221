@@ -19,6 +19,7 @@
 - 🤖 Specializing in Machine Learning, NLP & LLM-based systems  
 - 🎯 Targeting **SDE + ML Engineer roles**  
 - ⚡ Passionate about building **end-to-end AI-powered applications**
+- 💻 Learning new things each day
 
 ---
 
