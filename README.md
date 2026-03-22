@@ -4,9 +4,9 @@
   <img src="https://readme-typing-svg.herokuapp.com?size=28&color=00F7FF&center=true&vCenter=true&width=800&lines=Software+Engineer+%7C+Machine+Learning;NLP+%7C+LLMs+%7C+XGBoost;Building+AI+Systems+for+Real+World" />
 </p>
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://komarev.com/ghpvc/?username=DHANASHRI1221&style=flat-square&color=blue" />
-</p>
+</p> -->
 
 ---
 
