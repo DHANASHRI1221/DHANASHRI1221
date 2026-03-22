@@ -1,7 +1,7 @@
 # 👋 Hi, I'm Dhanashri Shivdas  
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=28&color=00F7FF&center=true&vCenter=true&width=800&lines=Software+Engineer+%7C+Machine+Learning;NLP+%7C+LLMs+%7C+XGBoost;Building+AI+Systems+for+Real+World" />
+  <img src="https://readme-typing-svg.herokuapp.com?size=28&color=00F7FF&center=true&vCenter=true&width=800&lines=Software+Engineer+%7C+Machine+Learning;NLP+%7C+LLMs+%7C+XGBoost;Building+production-ready+AI+applications" />
 </p>
 
 <!-- <p align="center">
@@ -14,12 +14,12 @@
 
 <img align="right" width="195" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
 
-- 🎓 Final Year Engineering Student @ IIT Delhi  
+- 🎓 Final Year Engineering Student @ IIT Delhi
+- 🏢 Incoming Data Scientist @ SLB (Schlumberger)
 - 💻 Software Engineer with strong system & application development skills  
 - 🤖 Specializing in Machine Learning, NLP & LLM-based systems  
 - 🎯 Targeting **SDE + ML Engineer roles**  
 - ⚡ Passionate about building **end-to-end AI-powered applications**
-- 💻 Learning new things each day
 
 ---
 
