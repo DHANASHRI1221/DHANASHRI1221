@@ -62,8 +62,7 @@
 
 
 ### ❓ Q&A Tool with API Integration  
-- NLP-based system integrating external APIs  
-👉 **[View Project](https://github.com/DHANASHRI1221/Question-and-Answer-Tool-with-API-Integration )**
+- NLP-based system integrating external APIs  👉 **[View Project](https://github.com/DHANASHRI1221/Question-and-Answer-Tool-with-API-Integration )**
 
 ---
 
