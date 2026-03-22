@@ -12,7 +12,7 @@
 
 ## 🚀 About Me  
 
-<img align="right" width="200" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
+<img align="right" width="195" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
 
 - 🎓 Final Year Engineering Student @ IIT Delhi  
 - 💻 Software Engineer with strong system & application development skills  
