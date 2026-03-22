@@ -171,15 +171,27 @@
         }
 
         .hero-text h1 {
-            font-size: 4rem;
+            <!-- font-size: 4rem;
             font-weight: 700;
             margin-bottom: 1rem;
             background: linear-gradient(135deg, #ffffff 0%, #8109c2ff 100%);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
+            animation: slideInLeft 1s ease 0.2s both; -->
+            font-size: clamp(4rem, 5vw, 5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            max-width: 900px;
+
+            background: linear-gradient(135deg, #ffffff 0%, #8109c2ff 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+
             animation: slideInLeft 1s ease 0.2s both;
-        }
+                }
 
         .hero-text .subtitle {
             font-size: 1.5rem;
@@ -729,7 +741,10 @@
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <h1>Software Engineer & Machine Learning Enthusiast</h1>
+                          <h1>
+  Software Engineer <br>
+  & ML Enthusiast
+                          </h1>
                         <div class="subtitle">Full-Stack • NLP • LLMs • Scalable Systems</div>
                         <p>Building scalable software systems and intelligent AI applications.Specializing in Machine Learning, NLP, and LLM-based systems with a focus on real-world problem solving and end-to-end development.</p>
                         <div class="cta-buttons">
