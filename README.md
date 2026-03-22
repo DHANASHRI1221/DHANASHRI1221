@@ -58,12 +58,12 @@
 
 ### 🛰️Drone_Detection_using_Micro-Doppler 
 - The implementation of Micro-Doppler signature simulation and drone detection using Machine Learning techniques
+  👉 **[View Project](https://github.com/DHANASHRI1221/Drone_Detection_using_Micro-Doppler)**
 
-### 🚁 Robotics Simulation – Drone Detection  
-- Micro-Doppler signature analysis for UAV detection  
 
 ### ❓ Q&A Tool with API Integration  
 - NLP-based system integrating external APIs  
+👉 **[View Project](https://github.com/DHANASHRI1221/Question-and-Answer-Tool-with-API-Integration )**
 
 ---
 
