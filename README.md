@@ -14,8 +14,7 @@
 
 <img align="right" width="195" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
 
-- 🎓 Final Year Engineering Student @ IIT Delhi
-- 🏢 Incoming Data Scientist @ SLB (Schlumberger)
+- 🎓 B.Tech Graduate, IIT Delhi | Incoming Data Scientist @ SLB
 - 💻 Software Engineer with strong system & application development skills  
 - 🤖 Specializing in Machine Learning, NLP & LLM-based systems  
 - 🎯 Targeting **SDE + ML Engineer roles**  
@@ -36,7 +35,7 @@
 
 ### 🧠 EmotiSense AI – Emotional Intelligence System
 
-🔹 TF-IDF + BERT + XGBoost
+🔹 TF-IDF + BERT + XGBoost 
 🔹 Confidence-based predictions
 🔹 Real-time Streamlit UI
 
