@@ -14,7 +14,7 @@
 
 <img align="right" width="195" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
 
-- 🎓 B.Tech Graduate, IIT Delhi | Incoming Data Scientist @ SLB
+- 🎓 B.Tech Graduate, IIT Delhi
 - 💻 Software Engineer with strong system & application development skills  
 - 🤖 Specializing in Machine Learning, NLP & LLM-based systems  
 - 🎯 Targeting **SDE + ML Engineer roles**  
